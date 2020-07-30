@@ -25,7 +25,7 @@ namespace WPF.Sample
                 Title = "",
             }
             .BorderBrush(Brushes.LightGray)
-            .BorderThickness(1)
+            .Border(1)
             .Height(550)
             .Width(600);
 

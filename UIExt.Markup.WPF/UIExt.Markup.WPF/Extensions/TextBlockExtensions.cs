@@ -23,9 +23,9 @@ namespace System.Windows
             return target;
         }
 
-        public static TextBlock FontStyleNormal(this TextBlock target) => target.FontStyle(FontStyles.Italic);
+        public static TextBlock FontStyleNormal(this TextBlock target) => target.FontStyle(FontStyles.Normal);
 
-        public static TextBlock FontStyleItalic(this TextBlock target) => target.FontStyle(FontStyles.Normal);
+        public static TextBlock FontStyleItalic(this TextBlock target) => target.FontStyle(FontStyles.Italic);
 
         public static TextBlock FontStyleOblique(this TextBlock target) => target.FontStyle(FontStyles.Oblique);
 

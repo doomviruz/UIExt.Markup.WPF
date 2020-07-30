@@ -42,13 +42,13 @@ namespace System.Windows
 
         public static ColumnDefinition WidthAll(this ColumnDefinition target)
         {
-            target.Width = new GridLength(1, GridUnitType.Auto);
+            target.Width = new GridLength(1, GridUnitType.Star);
             return target;
         }
 
         public static ColumnDefinition StarWidth(this ColumnDefinition target, double stars)
         {
-            target.Width = new GridLength(stars, GridUnitType.Auto);
+            target.Width = new GridLength(stars, GridUnitType.Star);
             return target;
         }
 

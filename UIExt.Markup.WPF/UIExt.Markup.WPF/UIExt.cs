@@ -40,11 +40,17 @@ namespace UIExt.Markup.WPF
 
         public static TextBox TextBox() => new TextBox();
 
+        public static ContextMenu ContextMenu() => new ContextMenu();
+
         public static RowDefinition RowDef => new RowDefinition();
 
         public static ColumnDefinition ColDef => new ColumnDefinition();
 
         public static Thickness Thickness(double thickness) => new Thickness(thickness);
+
+        public static Style Style() => new Style();
+
+        public static Style Style<T>() where T : UIElement => new Style(typeof(T));
 
         public static Setter Setter() => new Setter();
 
@@ -66,7 +72,9 @@ namespace UIExt.Markup.WPF
 
         public static Setter FontStyle(FontStyle value) => new Setter(Control.FontStyleProperty, value);
 
-        public static Element<Border> Border() => new Element<Border>();
+        public static Element<Border> BorderElement() => new Element<Border>();
+
+        public static Element<CheckBox> CheckBoxElement() => new Element<CheckBox>();
 
         public static Element<ContentPresenter> ContentPresenter() => new Element<ContentPresenter>();
 

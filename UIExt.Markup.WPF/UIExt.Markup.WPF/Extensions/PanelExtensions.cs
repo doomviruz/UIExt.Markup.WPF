@@ -4,7 +4,7 @@ namespace System.Windows
 {
     public static class PanelExtensions
     {
-        public static void Add<T>(this Panel target, UIElement item) => target.Children.Add(item);
+        public static void Add<T>(this Panel target, UIElement item) where T : UIElement => target.Children.Add(item);
 
         public static T Childs<T>(this T target, params UIElement[] childs) where T : Panel
         {

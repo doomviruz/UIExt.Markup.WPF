@@ -192,12 +192,6 @@ namespace System.Windows
             return target;
         }
 
-        public static T FocusVisualStyle<T>(this T target, Style value) where T : FrameworkElement
-        {
-            target.FocusVisualStyle = value;
-            return target;
-        }
-
         public static T Cursor<T>(this T target, Cursor value) where T : FrameworkElement
         {
             target.Cursor = value;
@@ -209,109 +203,5 @@ namespace System.Windows
             target.ForceCursor = value;
             return target;
         }
-
-        public static T AllowDrop<T>(this T target, Boolean value) where T : FrameworkElement
-        {
-            target.AllowDrop = value;
-            return target;
-        }
-
-        public static T RenderSize<T>(this T target, Size value) where T : FrameworkElement
-        {
-            target.RenderSize = value;
-            return target;
-        }
-
-        public static T RenderTransform<T>(this T target, Transform value) where T : FrameworkElement
-        {
-            target.RenderTransform = value;
-            return target;
-        }
-
-        public static T RenderTransformOrigin<T>(this T target, Point value) where T : FrameworkElement
-        {
-            target.RenderTransformOrigin = value;
-            return target;
-        }
-
-        public static T Opacity<T>(this T target, Double value) where T : FrameworkElement
-        {
-            target.Opacity = value;
-            return target;
-        }
-
-        public static T OpacityMask<T>(this T target, Brush value) where T : FrameworkElement
-        {
-            target.OpacityMask = value;
-            return target;
-        }
-
-        public static T Effect<T>(this T target, Effect value) where T : FrameworkElement
-        {
-            target.Effect = value;
-            return target;
-        }
-
-        public static T CacheMode<T>(this T target, CacheMode value) where T : FrameworkElement
-        {
-            target.CacheMode = value;
-            return target;
-        }
-
-        public static T Uid<T>(this T target, String value) where T : FrameworkElement
-        {
-            target.Uid = value;
-            return target;
-        }
-
-        public static T Visibility<T>(this T target, Visibility value) where T : FrameworkElement
-        {
-            target.Visibility = value;
-            return target;
-        }
-
-        public static T ClipToBounds<T>(this T target, Boolean value) where T : FrameworkElement
-        {
-            target.ClipToBounds = value;
-            return target;
-        }
-
-        public static T Clip<T>(this T target, Geometry value) where T : FrameworkElement
-        {
-            target.Clip = value;
-            return target;
-        }
-
-        public static T SnapsToDevicePixels<T>(this T target, Boolean value) where T : FrameworkElement
-        {
-            target.SnapsToDevicePixels = value;
-            return target;
-        }
-
-        public static T IsEnabled<T>(this T target, Boolean value) where T : FrameworkElement
-        {
-            target.IsEnabled = value;
-            return target;
-        }
-
-        public static T IsHitTestVisible<T>(this T target, Boolean value) where T : FrameworkElement
-        {
-            target.IsHitTestVisible = value;
-            return target;
-        }
-
-        public static T Focusable<T>(this T target, Boolean value) where T : FrameworkElement
-        {
-            target.Focusable = value;
-            return target;
-        }
-
-        public static T IsManipulationEnabled<T>(this T target, Boolean value) where T : FrameworkElement
-        {
-            target.IsManipulationEnabled = value;
-            return target;
-        }
-
-
     }
 }

@@ -29,12 +29,12 @@ namespace WPF.Sample
         {
             TargetType = typeof(Button),
             VisualTree =
-                Border()
+                BorderElement()
                     .Background(new TemplateBindingExtension(BackgroundProperty))
                     .BorderThickness(new TemplateBindingExtension(BorderThicknessProperty))
                     .BorderBrush(new TemplateBindingExtension(BorderBrushProperty))
                     .Childs(
-                        Border().Childs(_dialogButtonContentPresenter))
+                        BorderElement().Childs(_dialogButtonContentPresenter))
                     .Factory
         };
 

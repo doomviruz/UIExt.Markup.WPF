@@ -6,21 +6,19 @@ namespace System.Windows
 {
     public static class UIElementExtensions
     {
-        public static void Add<T>(UIElementCollection @this, UIElement item) => @this.Add(item);
-
         public static T Row<T>(this T target, int row) where T : UIElement
         {
-            System.Windows.Controls.Grid.SetRow(target, row);
+            Grid.SetRow(target, row);
             return target;
         }
 
         public static T Column<T>(this T target, int column) where T : UIElement
         {
-            System.Windows.Controls.Grid.SetColumn(target, column);
+            Grid.SetColumn(target, column);
             return target;
         }
 
-        public static T AllowDrop<T>(this T target, Boolean value) where T : UIElement
+        public static T AllowDrop<T>(this T target, bool value) where T : UIElement
         {
             target.AllowDrop = value;
             return target;
@@ -44,7 +42,7 @@ namespace System.Windows
             return target;
         }
 
-        public static T Opacity<T>(this T target, Double value) where T : UIElement
+        public static T Opacity<T>(this T target, double value) where T : UIElement
         {
             target.Opacity = value;
             return target;
@@ -86,7 +84,7 @@ namespace System.Windows
 
         public static T Collapsed<T>(this T target) where T : UIElement => target.Visibility(Windows.Visibility.Collapsed);
 
-        public static T ClipToBounds<T>(this T target, Boolean value) where T : UIElement
+        public static T ClipToBounds<T>(this T target, bool value) where T : UIElement
         {
             target.ClipToBounds = value;
             return target;
@@ -98,31 +96,31 @@ namespace System.Windows
             return target;
         }
 
-        public static T SnapsToDevicePixels<T>(this T target, Boolean value) where T : UIElement
+        public static T SnapsToDevicePixels<T>(this T target, bool value) where T : UIElement
         {
             target.SnapsToDevicePixels = value;
             return target;
         }
 
-        public static T IsEnabled<T>(this T target, Boolean value) where T : UIElement
+        public static T IsEnabled<T>(this T target, bool value) where T : UIElement
         {
             target.IsEnabled = value;
             return target;
         }
 
-        public static T IsHitTestVisible<T>(this T target, Boolean value) where T : UIElement
+        public static T IsHitTestVisible<T>(this T target, bool value) where T : UIElement
         {
             target.IsHitTestVisible = value;
             return target;
         }
 
-        public static T Focusable<T>(this T target, Boolean value) where T : UIElement
+        public static T Focusable<T>(this T target, bool value) where T : UIElement
         {
             target.Focusable = value;
             return target;
         }
 
-        public static T IsManipulationEnabled<T>(this T target, Boolean value) where T : UIElement
+        public static T IsManipulationEnabled<T>(this T target, bool value) where T : UIElement
         {
             target.IsManipulationEnabled = value;
             return target;

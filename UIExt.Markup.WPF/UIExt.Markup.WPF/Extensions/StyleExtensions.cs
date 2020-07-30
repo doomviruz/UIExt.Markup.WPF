@@ -29,21 +29,14 @@ namespace System.Windows
             return target;
         }
 
-        public static FrameworkElementFactory SetValue<T>(this FrameworkElementFactory target, DependencyProperty property, T value)
-        {
-            target.SetValue(property, value);
-            return target;
-        }
-
         public static Element<T> SetPropValue<T>(this Element<T> target, DependencyProperty property, object value) where T : UIElement
         {
             target.Factory.SetValue(property, value);
             return target;
         }
 
-        public static Element<TParent> Childs<TParent, TChild>(this Element<TParent> target, params Element<TChild>[] childs)
+        public static Element<TParent> Childs<TParent>(this Element<TParent> target, params Element[] childs)
             where TParent : UIElement
-            where TChild : UIElement
         {
             foreach (var child in childs)
             {
@@ -72,7 +65,7 @@ namespace System.Windows
             target.SetPropValue(Border.BorderBrushProperty, value);
 
         public static Element<Border> BorderThickness(this Element<Border> target, double value) =>
-            target.SetPropValue(Border.BorderThicknessProperty, value);
+            target.SetPropValue(Border.BorderThicknessProperty, new Thickness(value));
 
         public static Element<Border> BorderThickness(this Element<Border> target, object value) =>
             target.SetPropValue(Border.BorderThicknessProperty, value);
