@@ -77,6 +77,25 @@ namespace UIExt.Markup.WPF.Tests
         }
 
         [TestMethod]
+        public void TestFontComplex()
+        {
+            var control = Button()
+                .Font(family: "SegoeUI", size: 20, style: FontStyles.Normal, weight: FontWeights.SemiBold);
+
+            control.FontFamily.Should().BeEquivalentTo(new FontFamily("SegoeUI"));
+            control.FontSize.Should().Be(20);
+            control.FontStyle.Should().Be(FontStyles.Normal);
+            control.FontWeight.Should().Be(FontWeights.SemiBold);
+
+            control.Font();
+
+            control.FontFamily.Should().BeEquivalentTo(new FontFamily("SegoeUI"));
+            control.FontSize.Should().Be(20);
+            control.FontStyle.Should().Be(FontStyles.Normal);
+            control.FontWeight.Should().Be(FontWeights.SemiBold);
+        }
+
+        [TestMethod]
         public void TestBackground()
         {
             var control = Button();

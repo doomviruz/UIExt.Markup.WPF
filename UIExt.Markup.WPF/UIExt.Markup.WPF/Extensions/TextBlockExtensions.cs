@@ -84,5 +84,30 @@ namespace System.Windows
             target.FontFamily = new FontFamily(family);
             return target;
         }
+
+        public static TextBlock Font(this TextBlock target, string family = null, double? size = null, FontStyle? style = null, FontWeight? weight = null)
+        {
+            if (!string.IsNullOrEmpty(family))
+            {
+                target.Font(family);
+            }
+
+            if (size.HasValue)
+            {
+                target.FontSize(size.Value);
+            }
+
+            if (style.HasValue)
+            {
+                target.FontStyle(style.Value);
+            }
+
+            if (weight.HasValue)
+            {
+                target.FontWeight(weight.Value);
+            }
+
+            return target;
+        }
     }
 }

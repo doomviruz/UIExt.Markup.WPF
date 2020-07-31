@@ -11,12 +11,9 @@ public void Build() =>
                     .Childs(
                         TextBlock()
                             .Foreground(SolidBrush("#ff000000"))
-                            .FontStyleNormal()
-                            .FontWeightSemiBold()
+                            .Font(family: "SegoeUI", size: 20, style: FontStyles.Normal, weight: FontWeights.SemiBold)
                             .Text("SAMPLE DIALOG FOR UIExt.Markup.WPF")
                             .HAlignCenter()
-                            .Font("SegoeUI")
-                            .FontSize(20)
                             .LineHeight(24)
                             .Row(0)
                             .Margin(24),
