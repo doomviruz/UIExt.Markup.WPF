@@ -29,6 +29,15 @@ namespace UIExt.Markup.WPF.Tests
         }
 
         [TestMethod]
+        public void TestForeground()
+        {
+            var setter = Setters.Foreground(Brushes.Red);
+
+            setter.Property.Should().Be(Control.ForegroundProperty);
+            setter.Value.Should().Be(Brushes.Red);
+        }
+
+        [TestMethod]
         public void TestFontSize()
         {
             var setter = Setters.FontSize(20);
@@ -80,6 +89,76 @@ namespace UIExt.Markup.WPF.Tests
 
             setter.Property.Should().Be(Control.FontStyleProperty);
             setter.Value.Should().Be(FontStyles.Italic);
+        }
+
+        [TestMethod]
+        public void TestFontStretch()
+        {
+            var setter = Setters.FontStretch(FontStretches.Expanded);
+
+            setter.Property.Should().Be(Control.FontStretchProperty);
+            setter.Value.Should().Be(FontStretches.Expanded);
+        }
+
+        [TestMethod]
+        public void TestHContentAlign()
+        {
+            var setter = Setters.HContentAlign(HorizontalAlignment.Right);
+
+            setter.Property.Should().Be(Control.HorizontalContentAlignmentProperty);
+            setter.Value.Should().Be(HorizontalAlignment.Right);
+        }
+
+        [TestMethod]
+        public void TestVContentAlign()
+        {
+            var setter = Setters.VContentAlign(VerticalAlignment.Bottom);
+
+            setter.Property.Should().Be(Control.VerticalContentAlignmentProperty);
+            setter.Value.Should().Be(VerticalAlignment.Bottom);
+        }
+
+        [TestMethod]
+        public void TestIsTabStop()
+        {
+            var setter = Setters.IsTabStop(false);
+
+            setter.Property.Should().Be(Control.IsTabStopProperty);
+            setter.Value.Should().Be(false);
+        }
+
+        [TestMethod]
+        public void TestTabIndex()
+        {
+            var setter = Setters.TabIndex(5);
+
+            setter.Property.Should().Be(Control.TabIndexProperty);
+            setter.Value.Should().Be(5);
+        }
+
+        [TestMethod]
+        public void TestTemplate()
+        {
+            var template = new ControlTemplate(typeof(Button));
+            var setter = Setters.Template(template);
+
+            setter.Property.Should().Be(Control.TemplateProperty);
+            setter.Value.Should().Be(template);
+        }
+
+        [TestMethod]
+        public void TestPadding()
+        {
+            var setter = Setters.Padding(2);
+
+            setter.Property.Should().Be(Control.PaddingProperty);
+            setter.Value.Should().BeEquivalentTo(new Thickness(2));
+
+            var padding = new Thickness(1);
+            var setter2 = Setters.Padding(padding);
+
+            setter2.Property.Should().Be(Control.PaddingProperty);
+            setter2.Value.Should().BeEquivalentTo(padding);
         }
     }
 }
