@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using UIExt.Markup.WPF;
+using UIExt.Markup.WPF.Sample;
 using static System.Windows.Media.Brushes;
 using static UIExt.Markup.WPF.UIExt;
 
@@ -74,10 +75,13 @@ namespace WPF.Sample
         }
         .Triggers(_mouseOverTrigger, _pressedTrigger);
 
-        public SampleDialog()
+        public SampleDialog(SampleDialogViewModel viewModel)
         {
+            DataContext = ViewModel = viewModel;
             Build();
         }
+
+        public SampleDialogViewModel ViewModel { get; }
 
         public void Build() =>
             this.Content(
@@ -121,7 +125,7 @@ namespace WPF.Sample
                                     .HAlignRight()
                                     .Column(0)
                                     .Margin(24, 24, 3, 24)
-                                    .OnClick((sender, e) => MessageBox.Show("Action invoked")),
+                                    .Command(ViewModel.ActionCommand),
                                 Button()
                                     .Content("EXIT")
                                     .Name("ExitButton")
@@ -131,6 +135,6 @@ namespace WPF.Sample
                                     .HAlignLeft()
                                     .Column(1)
                                     .Margin(3, 24, 24, 24)
-                                    .OnClick((sender, e) => DialogResult = false))));
+                                    .Command(ViewModel.ExitCommand))));
     }
 }

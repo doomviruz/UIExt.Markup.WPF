@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
+using UIExt.Markup.WPF.Sample;
 
 namespace WPF.Sample
 {
@@ -16,7 +17,7 @@ namespace WPF.Sample
     {
         public App()
         {
-            var dialog = new SampleDialog()
+            var dialog = new SampleDialog(new SampleDialogViewModel())
             {
                 WindowStyle = WindowStyle.None,
                 SizeToContent = SizeToContent.Height,
@@ -29,7 +30,8 @@ namespace WPF.Sample
             .Height(550)
             .Width(600);
 
-            dialog.ShowDialog();
+            MainWindow = dialog;
+            dialog.Show();
         }
     }
 }

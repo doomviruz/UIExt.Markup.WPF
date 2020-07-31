@@ -46,7 +46,7 @@ public void Build() =>
                                     .HAlignRight()
                                     .Column(0)
                                     .Margin(24, 24, 3, 24)
-                                    .OnClick((sender, e) => MessageBox.Show("Action invoked")),
+                                    .Command(ViewModel.ActionCommand),
                                 Button()
                                     .Content("EXIT")
                                     .Name("ExitButton")
@@ -56,7 +56,7 @@ public void Build() =>
                                     .HAlignLeft()
                                     .Column(1)
                                     .Margin(3, 24, 24, 24)
-                                    .OnClick((sender, e) => DialogResult = false))));
+                                    .Command(ViewModel.ExitCommand))));
 ```
 
 ---
