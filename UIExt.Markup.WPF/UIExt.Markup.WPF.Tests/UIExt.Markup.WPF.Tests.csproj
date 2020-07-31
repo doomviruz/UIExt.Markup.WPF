@@ -75,6 +75,7 @@
     <Compile Include="TestStyleExtensions.cs" />
     <Compile Include="TestTextBlockExtensions.cs" />
     <Compile Include="TestTextBoxExtensions.cs" />
+    <Compile Include="TestToggleButtonExtensions.cs" />
     <Compile Include="TestTriggerDefs.cs" />
     <Compile Include="TestUIElementExtensions.cs" />
   </ItemGroup>

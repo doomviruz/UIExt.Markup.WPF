@@ -56,6 +56,7 @@
     <Compile Include="Extensions\StyleExtensions.cs" />
     <Compile Include="Extensions\TextBlockExtensions.cs" />
     <Compile Include="Extensions\TextBoxExtensions.cs" />
+    <Compile Include="Extensions\ToggleButtonExtensions.cs" />
     <Compile Include="Extensions\UIElementExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setters.cs" />
