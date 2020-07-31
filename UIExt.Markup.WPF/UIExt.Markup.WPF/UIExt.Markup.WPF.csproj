@@ -58,6 +58,8 @@
     <Compile Include="Extensions\TextBoxExtensions.cs" />
     <Compile Include="Extensions\UIElementExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setters.cs" />
+    <Compile Include="Triggers.cs" />
     <Compile Include="UIExt.cs" />
   </ItemGroup>
   <ItemGroup>

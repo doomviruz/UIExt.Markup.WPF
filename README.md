@@ -57,3 +57,24 @@ public void Build() =>
 ```
 
 ---
+
+## Control template definition example
+```csharp
+	ControlTemplate DialogButtonTemplate = new ControlTemplate
+        {
+            TargetType = typeof(Button),
+            VisualTree =
+                BorderElement()
+                    .Background(new TemplateBindingExtension(BackgroundProperty))
+                    .BorderThickness(new TemplateBindingExtension(BorderThicknessProperty))
+                    .BorderBrush(new TemplateBindingExtension(BorderBrushProperty))
+                    .Childs(
+                        BorderElement()
+                            .Childs(
+                                ContentPresenter()
+                                    .SetPropValue(HorizontalAlignmentProperty, HorizontalAlignment.Center)
+                                    .SetPropValue(VerticalAlignmentProperty, VerticalAlignment.Center)))
+                    .Factory
+        };
+```
+---

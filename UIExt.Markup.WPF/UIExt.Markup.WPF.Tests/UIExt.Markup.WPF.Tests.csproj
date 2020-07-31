@@ -71,9 +71,11 @@
     <Compile Include="TestFrameworkElementExtensions.cs" />
     <Compile Include="TestGridExtensions.cs" />
     <Compile Include="TestPanelExtensions.cs" />
+    <Compile Include="TestSetters.cs" />
     <Compile Include="TestStyleExtensions.cs" />
     <Compile Include="TestTextBlockExtensions.cs" />
     <Compile Include="TestTextBoxExtensions.cs" />
+    <Compile Include="TestTriggerDefs.cs" />
     <Compile Include="TestUIElementExtensions.cs" />
   </ItemGroup>
   <ItemGroup>

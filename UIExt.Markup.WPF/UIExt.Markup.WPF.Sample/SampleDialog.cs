@@ -9,6 +9,7 @@ using UIExt.Markup.WPF;
 using UIExt.Markup.WPF.Sample;
 using static System.Windows.Media.Brushes;
 using static UIExt.Markup.WPF.UIExt;
+using static UIExt.Markup.WPF.Setters;
 
 namespace WPF.Sample
 {
@@ -16,15 +17,10 @@ namespace WPF.Sample
     {
         private static readonly Brush _black40percent = SolidBrush("#999999");
 
-        private static Element<ContentPresenter> _dialogButtonContentPresenter =
-            ContentPresenter()
-                .SetPropValue(HorizontalAlignmentProperty, HorizontalAlignment.Center)
-                .SetPropValue(VerticalAlignmentProperty, VerticalAlignment.Center);
-
-        private static Trigger _mouseOverTrigger = IsMouseOverTrigger(BorderBrush(_black40percent));
+        private static Trigger _mouseOverTrigger = TriggerDefs.IsMouseOver(BorderBrush(_black40percent));
 
         private static Trigger _pressedTrigger =
-            IsPressedTrigger(BorderBrush(_black40percent), Background(_black40percent));
+            TriggerDefs.IsPressed(BorderBrush(_black40percent), Background(_black40percent));
 
         private static ControlTemplate DialogButtonTemplate = new ControlTemplate
         {
@@ -35,7 +31,11 @@ namespace WPF.Sample
                     .BorderThickness(new TemplateBindingExtension(BorderThicknessProperty))
                     .BorderBrush(new TemplateBindingExtension(BorderBrushProperty))
                     .Childs(
-                        BorderElement().Childs(_dialogButtonContentPresenter))
+                        BorderElement()
+                            .Childs(
+                                ContentPresenter()
+                                    .SetPropValue(HorizontalAlignmentProperty, HorizontalAlignment.Center)
+                                    .SetPropValue(VerticalAlignmentProperty, VerticalAlignment.Center)))
                     .Factory
         };
 
@@ -67,7 +67,7 @@ namespace WPF.Sample
             FontWeight(FontWeights.Normal),
             FontStyle(FontStyles.Normal),
             Setter(ForegroundProperty,          White),
-            Setter(BorderThicknessProperty,     Thickness(2)),
+            Setter(BorderThicknessProperty,     new Thickness(2)),
             Setter(BorderBrushProperty,         SolidBrush("#1565c0")),
             Setter(BackgroundProperty,          SolidBrush("#1565c0")),
             Setter(TemplateProperty,            DialogButtonTemplate),
