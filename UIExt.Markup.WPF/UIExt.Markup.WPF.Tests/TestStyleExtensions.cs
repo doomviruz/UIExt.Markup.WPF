@@ -96,6 +96,14 @@ namespace UIExt.Markup.WPF.Tests
         }
 
         [TestMethod]
+        public void TestSetters()
+        {
+            var style = Style().Setters(new Setter(), new Setter());
+
+            style.Setters.Count.Should().Be(2);
+        }
+
+        [TestMethod]
         public void TestBorderBackground()
         {
             var element = BorderElement();

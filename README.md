@@ -78,3 +78,23 @@ public void Build() =>
         };
 ```
 ---
+
+## Style definition example
+```csharp
+Style DialogButtonStyle = 
+	new Style()
+            new Style()
+                .Setters(
+                    SnapsToPixels(true),
+                    FontSize(14),
+                    FontFamily("SegoeUI"),
+                    FontWeight(FontWeights.Normal),
+                    FontStyle(FontStyles.Normal),
+                    Foreground(_buttonForegroundBrush),
+                    BorderThickness(2),
+                    BorderBrush(_buttonBorderBrush),
+                    Background(_buttonBorderBrush),
+                    Template(DialogButtonTemplate))
+                .Triggers(_mouseOverTrigger, _pressedTrigger);
+```
+---

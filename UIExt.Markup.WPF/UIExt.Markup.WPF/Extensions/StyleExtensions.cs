@@ -80,5 +80,16 @@ namespace System.Windows
 
             return target;
         }
+
+        public static Style Setters(this Style target, params SetterBase[] setters)
+        {
+            target.Triggers.Clear();
+            foreach (var setter in setters)
+            {
+                target.Setters.Add(setter);
+            }
+
+            return target;
+        }
     }
 }

@@ -17,6 +17,10 @@ namespace WPF.Sample
     {
         private static readonly Brush _black40percent = SolidBrush("#999999");
 
+        private static readonly Brush _buttonBorderBrush = SolidBrush("#cccccc");
+
+        private static readonly Brush _buttonForegroundBrush = SolidBrush("#FF000000");
+
         private static Trigger _mouseOverTrigger = TriggerDefs.IsMouseOver(BorderBrush(_black40percent));
 
         private static Trigger _pressedTrigger =
@@ -39,23 +43,20 @@ namespace WPF.Sample
                     .Factory
         };
 
-        private static Style DialogButtonStyle = new Style()
-        {
-            Setters =
-            {
-                SnapsToPixels(true),
-                FontSize(14),
-                FontFamily("SegoeUI"),
-                FontWeight(FontWeights.Normal),
-                FontStyle(FontStyles.Normal),
-                Setter(ForegroundProperty,          SolidBrush("#FF000000")),
-                BorderThickness(2),
-                BorderBrush(SolidBrush("#cccccc")),
-                Setter(BackgroundProperty,          SolidBrush("#cccccc")),
-                Setter(TemplateProperty,            DialogButtonTemplate),
-            },
-        }
-        .Triggers(_mouseOverTrigger, _pressedTrigger);
+        private static Style DialogButtonStyle = 
+            new Style()
+                .Setters(
+                    SnapsToPixels(true),
+                    FontSize(14),
+                    FontFamily("SegoeUI"),
+                    FontWeight(FontWeights.Normal),
+                    FontStyle(FontStyles.Normal),
+                    Foreground(_buttonForegroundBrush),
+                    BorderThickness(2),
+                    BorderBrush(_buttonBorderBrush),
+                    Background(_buttonBorderBrush),
+                    Template(DialogButtonTemplate))
+                .Triggers(_mouseOverTrigger, _pressedTrigger);
 
         private Style AccentDialogButtonStyle = new Style()
         {
