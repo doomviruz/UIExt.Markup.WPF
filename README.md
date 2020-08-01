@@ -82,8 +82,7 @@ public void Build() =>
 ## Style definition example
 ```csharp
 Style DialogButtonStyle = 
-	new Style()
-            new Style()
+            Style()
                 .Setters(
                     SnapsToPixels(true),
                     FontSize(14),
