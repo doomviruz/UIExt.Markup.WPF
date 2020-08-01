@@ -18,17 +18,15 @@ namespace WPF.Sample
         public App()
         {
             var dialog = new SampleDialog(new SampleDialogViewModel())
-            {
-                WindowStyle = WindowStyle.None,
-                SizeToContent = SizeToContent.Height,
-                ResizeMode = ResizeMode.NoResize,
-                WindowStartupLocation = WindowStartupLocation.CenterScreen,
-                Title = "",
-            }
-            .BorderBrush(Brushes.LightGray)
-            .Border(1)
-            .Height(550)
-            .Width(600);
+                .WindowStyle(WindowStyle.None)
+                .SizeToContent(SizeToContent.Height)
+                .ResizeMode(ResizeMode.NoResize)
+                .StartupLocation(WindowStartupLocation.CenterScreen)
+                .Title(string.Empty)
+                .BorderBrush(Brushes.LightGray)
+                .Border(1)
+                .Height(550)
+                .Width(600);
 
             MainWindow = dialog;
             dialog.Show();

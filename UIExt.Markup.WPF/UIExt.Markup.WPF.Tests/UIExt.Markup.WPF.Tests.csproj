@@ -78,6 +78,7 @@
     <Compile Include="TestToggleButtonExtensions.cs" />
     <Compile Include="TestTriggerDefs.cs" />
     <Compile Include="TestUIElementExtensions.cs" />
+    <Compile Include="TestWindowExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
