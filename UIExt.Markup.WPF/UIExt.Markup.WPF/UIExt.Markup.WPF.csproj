@@ -53,7 +53,9 @@
     <Compile Include="Extensions\ControlExtensions.cs" />
     <Compile Include="Extensions\FrameworkElementExtensions.cs" />
     <Compile Include="Extensions\GridExtensions.cs" />
+    <Compile Include="Extensions\PageExtensions.cs" />
     <Compile Include="Extensions\PanelExtensions.cs" />
+    <Compile Include="Extensions\RadioButtonExtensions.cs" />
     <Compile Include="Extensions\SelectorExtensions.cs" />
     <Compile Include="Extensions\StyleExtensions.cs" />
     <Compile Include="Extensions\TextBlockExtensions.cs" />

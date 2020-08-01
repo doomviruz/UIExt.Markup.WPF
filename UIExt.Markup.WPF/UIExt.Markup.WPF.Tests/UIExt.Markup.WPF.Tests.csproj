@@ -71,7 +71,9 @@
     <Compile Include="TestControlExtensions.cs" />
     <Compile Include="TestFrameworkElementExtensions.cs" />
     <Compile Include="TestGridExtensions.cs" />
+    <Compile Include="TestPageExtensions.cs" />
     <Compile Include="TestPanelExtensions.cs" />
+    <Compile Include="TestRadioButtonExtensions.cs" />
     <Compile Include="TestSelectorExtensions.cs" />
     <Compile Include="TestSetters.cs" />
     <Compile Include="TestStyleExtensions.cs" />
