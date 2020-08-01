@@ -57,6 +57,7 @@
     <Compile Include="Extensions\PanelExtensions.cs" />
     <Compile Include="Extensions\RadioButtonExtensions.cs" />
     <Compile Include="Extensions\SelectorExtensions.cs" />
+    <Compile Include="Extensions\StackPanelExtensions.cs" />
     <Compile Include="Extensions\StyleExtensions.cs" />
     <Compile Include="Extensions\TextBlockExtensions.cs" />
     <Compile Include="Extensions\TextBoxExtensions.cs" />
