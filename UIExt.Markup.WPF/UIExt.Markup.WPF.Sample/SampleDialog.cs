@@ -26,7 +26,7 @@ namespace WPF.Sample
         private static Trigger _pressedTrigger =
             TriggerDefs.IsPressed(BorderBrush(_black40percent), Background(_black40percent));
 
-        private static ControlTemplate DialogButtonTemplate = new ControlTemplate
+        private static ControlTemplate _dialogButtonTemplate = new ControlTemplate
         {
             TargetType = typeof(Button),
             VisualTree =
@@ -43,7 +43,7 @@ namespace WPF.Sample
                     .Factory
         };
 
-        private static Style DialogButtonStyle = 
+        private static Style _dialogButtonStyle = 
             new Style()
                 .Setters(
                     SnapsToPixels(true),
@@ -55,10 +55,10 @@ namespace WPF.Sample
                     BorderThickness(2),
                     BorderBrush(_buttonBorderBrush),
                     Background(_buttonBorderBrush),
-                    Template(DialogButtonTemplate))
+                    Template(_dialogButtonTemplate))
                 .Triggers(_mouseOverTrigger, _pressedTrigger);
 
-        private Style AccentDialogButtonStyle = new Style()
+        private static Style _accentDialogButtonStyle = new Style()
         {
             Setters =
         {
@@ -71,7 +71,7 @@ namespace WPF.Sample
             Setter(BorderThicknessProperty,     new Thickness(2)),
             Setter(BorderBrushProperty,         SolidBrush("#1565c0")),
             Setter(BackgroundProperty,          SolidBrush("#1565c0")),
-            Setter(TemplateProperty,            DialogButtonTemplate),
+            Setter(TemplateProperty,            _dialogButtonTemplate),
         }
         }
         .Triggers(_mouseOverTrigger, _pressedTrigger);
@@ -117,7 +117,7 @@ namespace WPF.Sample
                                 Button()
                                     .Content("ACTION")
                                     .Name("ActionButton")
-                                    .Style(AccentDialogButtonStyle)
+                                    .Style(_accentDialogButtonStyle)
                                     .Height(32)
                                     .Width(145)
                                     .HAlignRight()
@@ -127,7 +127,7 @@ namespace WPF.Sample
                                 Button()
                                     .Content("EXIT")
                                     .Name("ExitButton")
-                                    .Style(DialogButtonStyle)
+                                    .Style(_dialogButtonStyle)
                                     .Height(32)
                                     .Width(145)
                                     .HAlignLeft()
