@@ -162,5 +162,22 @@ namespace UIExt.Markup.WPF.Tests
 
             GetFactoryPropValue(element.Factory, Control.BorderThicknessProperty).Should().Be(binding);
         }
+
+        [TestMethod]
+        public void TestTargetType()
+        {
+            var style = Style().TargetType(typeof(Button));
+
+            style.TargetType.Should().Be(typeof(Button));
+        }
+
+        [TestMethod]
+        public void TestBasedOn()
+        {
+            var style = Style();
+            var styleBasedOn = Style().BasedOn(style);
+
+            styleBasedOn.BasedOn.Should().Be(style);
+        }
     }
 }

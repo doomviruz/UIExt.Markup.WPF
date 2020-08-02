@@ -91,5 +91,17 @@ namespace System.Windows
 
             return target;
         }
+
+        public static Style TargetType(this Style target, Type value)
+        {
+            target.TargetType = value;
+            return target;
+        }
+
+        public static Style BasedOn(this Style target, Style value)
+        {
+            target.BasedOn = value;
+            return target;
+        }
     }
 }
