@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using static UIExt.Markup.WPF.UIExt;
@@ -28,5 +29,20 @@ namespace UIExt.Markup.WPF.Tests
             panel.Childs(Button(), ToggleButton()).Children.Count.Should().Be(2);
         }
 
+        [TestMethod]
+        public void TestIsItemsHost()
+        {
+            var panel = StackPanel();
+
+            panel.IsItemsHost(true).IsItemsHost.Should().Be(true);
+        }
+
+        [TestMethod]
+        public void TestBackground()
+        {
+            var panel = StackPanel();
+
+            panel.Background(Brushes.Red).Background.Should().Be(Brushes.Red);
+        }
     }
 }

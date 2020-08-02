@@ -18,6 +18,18 @@ namespace System.Windows
             return target;
         }
 
+        public static T RowSpan<T>(this T target, int value) where T : UIElement
+        {
+            Grid.SetRowSpan(target, value);
+            return target;
+        }
+
+        public static T ColumnSpan<T>(this T target, int value) where T : UIElement
+        {
+            Grid.SetColumnSpan(target, value);
+            return target;
+        }
+
         public static T AllowDrop<T>(this T target, bool value) where T : UIElement
         {
             target.AllowDrop = value;

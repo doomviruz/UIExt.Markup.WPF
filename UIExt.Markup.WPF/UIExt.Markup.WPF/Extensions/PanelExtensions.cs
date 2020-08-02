@@ -1,4 +1,5 @@
 ﻿using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace System.Windows
 {
@@ -17,5 +18,16 @@ namespace System.Windows
             return target;
         }
 
+        public static T IsItemsHost<T>(this T target, bool value) where T : Panel
+        {
+            target.IsItemsHost = value;
+            return target;
+        }
+
+        public static T Background<T>(this T target, Brush value) where T : Panel
+        {
+            target.Background = value;
+            return target;
+        }
     }
 }

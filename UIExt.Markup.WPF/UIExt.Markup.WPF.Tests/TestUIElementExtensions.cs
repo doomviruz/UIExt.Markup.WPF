@@ -33,6 +33,26 @@ namespace UIExt.Markup.WPF.Tests
         }
 
         [TestMethod]
+        public void TestSetRowSpan()
+        {
+            var element = Button();
+
+            element.RowSpan(2);
+
+            System.Windows.Controls.Grid.GetRowSpan(element).Should().Be(2);
+        }
+
+        [TestMethod]
+        public void TestSetColumnSpan()
+        {
+            var element = Button();
+
+            element.ColumnSpan(2);
+
+            System.Windows.Controls.Grid.GetColumnSpan(element).Should().Be(2);
+        }
+
+        [TestMethod]
         public void TestAllowDrop()
         {
             var element = Button();

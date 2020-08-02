@@ -46,5 +46,13 @@ namespace UIExt.Markup.WPF.Tests
 
             grid.ColDefs(ColDef, ColDef).ColumnDefinitions.Count.Should().Be(2);
         }
+
+        [TestMethod]
+        public void TestShowGridLines()
+        {
+            var grid = Grid();
+
+            grid.ShowGridLines(true).ShowGridLines.Should().Be(true);
+        }
     }
 }

@@ -52,7 +52,7 @@ namespace System.Windows
             return target;
         }
 
-        public static Grid RowDefs(this Grid target, params RowDefinition[] rows)
+        public static T RowDefs<T>(this T target, params RowDefinition[] rows) where T : Grid
         {
             target.RowDefinitions.Clear();
             foreach (var row in rows)
@@ -63,7 +63,7 @@ namespace System.Windows
             return target;
         }
 
-        public static Grid ColDefs(this Grid target, params ColumnDefinition[] columns)
+        public static T ColDefs<T>(this T target, params ColumnDefinition[] columns) where T : Grid
         {
             target.ColumnDefinitions.Clear();
             foreach (var column in columns)
@@ -71,6 +71,12 @@ namespace System.Windows
                 target.ColumnDefinitions.Add(column);
             }
 
+            return target;
+        }
+
+        public static T ShowGridLines<T>(this T target, bool value) where T : Grid
+        {
+            target.ShowGridLines = value;
             return target;
         }
     }
