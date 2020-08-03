@@ -18,11 +18,19 @@ namespace UIExt.Markup.WPF
 
         public static Grid Grid() => new Grid();
 
+        public static GridSplitter GridSplitter() => new GridSplitter();
+
+        public static GroupBox GroupBox() => new GroupBox();
+
+        public static DockPanel DockPanel() => new DockPanel();
+
         public static StackPanel StackPanel() => new StackPanel();
 
         public static VirtualizingStackPanel VirtStackPanel() => new VirtualizingStackPanel();
 
         public static WrapPanel WrapPanel() => new WrapPanel();
+
+        public static BulletDecorator BulletDecorator() => new BulletDecorator();
 
         public static Button Button() => new Button();
 
@@ -37,6 +45,10 @@ namespace UIExt.Markup.WPF
         public static TextBlock TextBlock() => new TextBlock();
 
         public static TextBox TextBox() => new TextBox();
+
+        public static Canvas Canvas() => new Canvas();
+
+        public static Expander Expander() => new Expander();
 
         public static ContextMenu ContextMenu() => new ContextMenu();
 

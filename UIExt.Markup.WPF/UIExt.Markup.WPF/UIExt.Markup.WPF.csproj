@@ -51,12 +51,17 @@
     <Compile Include="Extensions\ComboBoxExtensions.cs" />
     <Compile Include="Extensions\ContentControlExtensions.cs" />
     <Compile Include="Extensions\ControlExtensions.cs" />
+    <Compile Include="Extensions\BulletDecoratorExtensions.cs" />
+    <Compile Include="Extensions\HeaderedContentControlExtensions.cs" />
+    <Compile Include="Extensions\GridSplitterExtensions.cs" />
+    <Compile Include="Extensions\ExpanderExtensions.cs" />
     <Compile Include="Extensions\FrameworkElementExtensions.cs" />
     <Compile Include="Extensions\GridExtensions.cs" />
     <Compile Include="Extensions\PageExtensions.cs" />
     <Compile Include="Extensions\PanelExtensions.cs" />
     <Compile Include="Extensions\RadioButtonExtensions.cs" />
     <Compile Include="Extensions\SelectorExtensions.cs" />
+    <Compile Include="Extensions\DockPanelExtensions.cs" />
     <Compile Include="Extensions\WrapPanelExtensions.cs" />
     <Compile Include="Extensions\VirtualizingStackPanelExtensions.cs" />
     <Compile Include="Extensions\StackPanelExtensions.cs" />

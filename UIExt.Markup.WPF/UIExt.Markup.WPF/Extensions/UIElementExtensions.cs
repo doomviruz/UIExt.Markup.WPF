@@ -30,6 +30,30 @@ namespace System.Windows
             return target;
         }
 
+        public static T CanvasLeft<T>(this T target, double value) where T : UIElement
+        {
+            Canvas.SetLeft(target, value);
+            return target;
+        }
+
+        public static T CanvasTop<T>(this T target, double value) where T : UIElement
+        {
+            Canvas.SetTop(target, value);
+            return target;
+        }
+
+        public static T CanvasRight<T>(this T target, double value) where T : UIElement
+        {
+            Canvas.SetRight(target, value);
+            return target;
+        }
+
+        public static T CanvasBottom<T>(this T target, double value) where T : UIElement
+        {
+            Canvas.SetBottom(target, value);
+            return target;
+        }
+
         public static T AllowDrop<T>(this T target, bool value) where T : UIElement
         {
             target.AllowDrop = value;
