@@ -20,6 +20,14 @@ namespace UIExt.Markup.WPF
 
         public static GridSplitter GridSplitter() => new GridSplitter();
 
+        public static ResizeGrip ResizeGrip() => new ResizeGrip();
+
+        public static Separator Separator() => new Separator();
+
+        public static ScrollViewer ScrollViewer() => new ScrollViewer();
+
+        public static ScrollBar ScrollBar() => new ScrollBar();
+
         public static GroupBox GroupBox() => new GroupBox();
 
         public static DockPanel DockPanel() => new DockPanel();

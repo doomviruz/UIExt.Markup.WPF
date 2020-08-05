@@ -52,6 +52,10 @@
     <Compile Include="Extensions\ContentControlExtensions.cs" />
     <Compile Include="Extensions\ControlExtensions.cs" />
     <Compile Include="Extensions\BulletDecoratorExtensions.cs" />
+    <Compile Include="Extensions\DependencyObjectExtensions.cs" />
+    <Compile Include="Extensions\ScrollViewerExtensions.cs" />
+    <Compile Include="Extensions\RangeBaseExtensions.cs" />
+    <Compile Include="Extensions\ScrollbarExtensions.cs" />
     <Compile Include="Extensions\HeaderedContentControlExtensions.cs" />
     <Compile Include="Extensions\GridSplitterExtensions.cs" />
     <Compile Include="Extensions\ExpanderExtensions.cs" />
