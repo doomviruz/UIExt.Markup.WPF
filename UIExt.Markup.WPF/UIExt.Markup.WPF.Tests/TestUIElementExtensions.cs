@@ -53,6 +53,46 @@ namespace UIExt.Markup.WPF.Tests
         }
 
         [TestMethod]
+        public void TestSetCanvasLeft()
+        {
+            var element = Button();
+
+            element.CanvasLeft(111);
+
+            System.Windows.Controls.Canvas.GetLeft(element).Should().Be(111);
+        }
+
+        [TestMethod]
+        public void TestSetCanvasTop()
+        {
+            var element = Button();
+
+            element.CanvasTop(111);
+
+            System.Windows.Controls.Canvas.GetTop(element).Should().Be(111);
+        }
+
+        [TestMethod]
+        public void TestSetCanvasRight()
+        {
+            var element = Button();
+
+            element.CanvasRight(111);
+
+            System.Windows.Controls.Canvas.GetRight(element).Should().Be(111);
+        }
+
+        [TestMethod]
+        public void TestSetCanvasBottom()
+        {
+            var element = Button();
+
+            element.CanvasBottom(111);
+
+            System.Windows.Controls.Canvas.GetBottom(element).Should().Be(111);
+        }
+
+        [TestMethod]
         public void TestAllowDrop()
         {
             var element = Button();

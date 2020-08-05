@@ -64,8 +64,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestHeaderedContentControlExtensions.cs" />
+    <Compile Include="TestGridSplitterExtensions.cs" />
+    <Compile Include="TestExpanderExtensions.cs" />
     <Compile Include="TestButtonExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestBulletDecoratorExtensions.cs" />
+    <Compile Include="TestDockPanelExtensions.cs" />
     <Compile Include="TestComboBoxExtensions.cs" />
     <Compile Include="TestContentControlExtensions.cs" />
     <Compile Include="TestControlExtensions.cs" />
