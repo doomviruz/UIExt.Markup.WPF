@@ -8,9 +8,9 @@ namespace UIExt.Markup.WPF
 {
     public static class UIExt
     {
-        public static Brush SolidBrush(string colorCode) => new SolidColorBrush((Color)ColorConverter.ConvertFromString(colorCode));
+        public static SolidColorBrush SolidBrush(string colorCode) => new SolidColorBrush((Color)ColorConverter.ConvertFromString(colorCode));
 
-        public static Brush SolidBrush(byte a, byte r, byte g, byte b) => new SolidColorBrush(Color.FromArgb(a, r, g, b));
+        public static SolidColorBrush SolidBrush(byte a, byte r, byte g, byte b) => new SolidColorBrush(Color.FromArgb(a, r, g, b));
 
         public static Window Window() => new Window();
 

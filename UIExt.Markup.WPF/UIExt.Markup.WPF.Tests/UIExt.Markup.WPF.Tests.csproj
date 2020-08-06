@@ -64,6 +64,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestDependencyObjectExtensions.cs" />
+    <Compile Include="TestUIExt.cs" />
+    <Compile Include="TestScrollbarExtensions.cs" />
+    <Compile Include="TestScrollViewerExtensions.cs" />
+    <Compile Include="TestRangeBaseExtensions.cs" />
     <Compile Include="TestHeaderedContentControlExtensions.cs" />
     <Compile Include="TestGridSplitterExtensions.cs" />
     <Compile Include="TestExpanderExtensions.cs" />

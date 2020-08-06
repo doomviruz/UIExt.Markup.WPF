@@ -10,43 +10,43 @@ namespace System.Windows
 {
     public static class ScrollViewerExtensions
     {
-        public static T CanContentScroll<T>(this T target, bool value) where T : ScrollViewer
+        public static ScrollViewer CanContentScroll(this ScrollViewer target, bool value)
         {
             target.CanContentScroll = value;
             return target;
         }
 
-        public static T HorizontalScrollBarVisibility<T>(this T target, ScrollBarVisibility value) where T : ScrollViewer
+        public static ScrollViewer HorizontalScrollBarVisibility(this ScrollViewer target, ScrollBarVisibility value)
         {
             target.HorizontalScrollBarVisibility = value;
             return target;
         }
 
-        public static T VerticalScrollBarVisibility<T>(this T target, ScrollBarVisibility value) where T : ScrollViewer
+        public static ScrollViewer VerticalScrollBarVisibility(this ScrollViewer target, ScrollBarVisibility value)
         {
             target.VerticalScrollBarVisibility = value;
             return target;
         }
 
-        public static T PanningDeceleration<T>(this T target, double value) where T : ScrollViewer
+        public static ScrollViewer PanningDeceleration(this ScrollViewer target, double value)
         {
             target.PanningDeceleration = value;
             return target;
         }
 
-        public static T IsDeferredScrollingEnabled<T>(this T target, bool value) where T : ScrollViewer
+        public static ScrollViewer IsDeferredScrollingEnabled(this ScrollViewer target, bool value)
         {
             target.IsDeferredScrollingEnabled = value;
             return target;
         }
 
-        public static T PanningMode<T>(this T target, PanningMode value) where T : ScrollViewer
+        public static ScrollViewer PanningMode(this ScrollViewer target, PanningMode value) 
         {
             target.PanningMode = value;
             return target;
         }
 
-        public static T PanningRatio<T>(this T target, double value) where T : ScrollViewer
+        public static ScrollViewer PanningRatio(this ScrollViewer target, double value)
         {
             target.PanningRatio = value;
             return target;
