@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TestDependencyObjectExtensions.cs" />
+    <Compile Include="TestViewboxExtensions.cs" />
     <Compile Include="TestUIExt.cs" />
     <Compile Include="TestScrollbarExtensions.cs" />
     <Compile Include="TestScrollViewerExtensions.cs" />

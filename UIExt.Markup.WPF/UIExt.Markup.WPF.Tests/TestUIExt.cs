@@ -38,5 +38,11 @@ namespace UIExt.Markup.WPF.Tests
             trigger.Setters.First().As<Setter>().Property.Should().Be(Control.ForegroundProperty);
             trigger.Setters.First().As<Setter>().Value.Should().Be(Brushes.Blue);
         }
+
+        [TestMethod]
+        public void TestThumb()
+        {
+            Thumb().Should().NotBeNull();
+        }
     }
 }

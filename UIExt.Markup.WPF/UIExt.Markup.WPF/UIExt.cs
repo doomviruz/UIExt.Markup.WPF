@@ -58,6 +58,10 @@ namespace UIExt.Markup.WPF
 
         public static Expander Expander() => new Expander();
 
+        public static Thumb Thumb() => new Thumb();
+
+        public static Viewbox Viewbox() => new Viewbox();
+
         public static ContextMenu ContextMenu() => new ContextMenu();
 
         public static RowDefinition RowDef => new RowDefinition();
