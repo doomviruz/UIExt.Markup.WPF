@@ -49,6 +49,7 @@
     <Compile Include="Element.cs" />
     <Compile Include="Extensions\Buttons\RepeatButtonExtensions.cs" />
     <Compile Include="Extensions\Buttons\ButtonExtensions.cs" />
+    <Compile Include="Extensions\DataDisplay\CalendarExtensions.cs" />
     <Compile Include="Extensions\Selection\ComboBoxExtensions.cs" />
     <Compile Include="Extensions\ContentControlExtensions.cs" />
     <Compile Include="Extensions\ControlExtensions.cs" />
@@ -86,7 +87,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Extensions\DataDisplay\" />
     <Folder Include="Extensions\Dialogs\" />
     <Folder Include="Extensions\Documents\" />
     <Folder Include="Extensions\Ink\" />

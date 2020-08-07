@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TestDependencyObjectExtensions.cs" />
+    <Compile Include="TestCalendarExtensions.cs" />
     <Compile Include="TestRepeatButtonExtensions.cs" />
     <Compile Include="TestViewboxExtensions.cs" />
     <Compile Include="TestUIExt.cs" />
