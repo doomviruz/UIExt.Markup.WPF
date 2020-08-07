@@ -42,6 +42,8 @@ namespace UIExt.Markup.WPF
 
         public static Button Button() => new Button();
 
+        public static RepeatButton RepeatButton() => new RepeatButton();
+
         public static ToggleButton ToggleButton() => new ToggleButton();
 
         public static RadioButton RadioButton() => new RadioButton();

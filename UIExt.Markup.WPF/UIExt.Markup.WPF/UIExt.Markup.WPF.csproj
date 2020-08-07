@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Element.cs" />
+    <Compile Include="Extensions\Buttons\RepeatButtonExtensions.cs" />
     <Compile Include="Extensions\Buttons\ButtonExtensions.cs" />
     <Compile Include="Extensions\Selection\ComboBoxExtensions.cs" />
     <Compile Include="Extensions\ContentControlExtensions.cs" />
