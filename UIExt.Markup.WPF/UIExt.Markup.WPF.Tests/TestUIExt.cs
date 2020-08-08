@@ -1,9 +1,11 @@
 ﻿using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Media;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using UIExt.Markup.WPF.Converters;
 using static UIExt.Markup.WPF.UIExt;
 
 namespace UIExt.Markup.WPF.Tests
@@ -43,6 +45,14 @@ namespace UIExt.Markup.WPF.Tests
         public void TestThumb()
         {
             Thumb().Should().NotBeNull();
+        }
+
+        [TestMethod]
+        public void TestBindingWithConverter()
+        {
+            var converter = new FunctionalConverter<bool, bool>((value, _) => value, (value, _) => value);
+            var binding = new Binding("Some property") { Converter = converter };
+            Binding("Some property", converter).Should().BeEquivalentTo(binding);
         }
     }
 }

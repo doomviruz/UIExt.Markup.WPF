@@ -8,13 +8,13 @@ namespace UIExt.Markup.WPF.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var castedValue = (TFrom)value;
+            var castedValue = value == null ? default(TFrom) : (TFrom)value;
             return Convert(castedValue, culture);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var castedValue = (TTo)value;
+            var castedValue = value == null ? default(TTo) : (TTo)value;
             return ConvertBack(castedValue, culture);
         }
 

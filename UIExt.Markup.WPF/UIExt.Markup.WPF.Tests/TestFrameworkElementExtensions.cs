@@ -249,5 +249,14 @@ namespace UIExt.Markup.WPF.Tests
 
             element.ForceCursor(true).ForceCursor.Should().BeTrue();
         }
+
+        [TestMethod]
+        public void TestBind()
+        {
+            var binding = Binding("SomeProperty");
+            var element = Button().Bind(Control.BackgroundProperty, binding);
+
+            BindingOperations.GetBinding(element, Control.BackgroundProperty).Should().Be(binding);
+        }
     }
 }
