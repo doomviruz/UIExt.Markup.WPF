@@ -46,6 +46,8 @@ namespace UIExt.Markup.WPF
 
         public static Calendar Calendar() => new Calendar();
 
+        public static DatePicker DatePicker() => new DatePicker();
+
         public static ToggleButton ToggleButton() => new ToggleButton();
 
         public static RadioButton RadioButton() => new RadioButton();
