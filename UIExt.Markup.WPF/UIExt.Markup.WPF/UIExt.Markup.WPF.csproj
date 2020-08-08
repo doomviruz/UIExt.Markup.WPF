@@ -48,7 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converters\ConverterBase.cs" />
+    <Compile Include="Converters\FunctionalConverter.cs" />
     <Compile Include="Converters\ParameterizedConverterBase.cs" />
+    <Compile Include="Converters\ParameterizedFunctionalConverter.cs" />
     <Compile Include="Element.cs" />
     <Compile Include="Extensions\Buttons\RepeatButtonExtensions.cs" />
     <Compile Include="Extensions\Buttons\ButtonExtensions.cs" />

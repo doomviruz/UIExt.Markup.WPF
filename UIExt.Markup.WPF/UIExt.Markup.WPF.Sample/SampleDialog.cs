@@ -99,7 +99,7 @@ namespace WPF.Sample
                             .Row(0)
                             .Margin(24),
                         Grid()
-                            .ColDefs(ColDef, ColDef)
+                            .ColDefs(ColDef, ColDef, ColDef)
                             .Row(1)
                             .Childs(
                                 ToggleButton()
@@ -114,7 +114,16 @@ namespace WPF.Sample
                                     .Text("Some additional text")
                                     .Bind(
                                         VisibilityProperty, 
-                                        Binding(nameof(ViewModel.AdditionalTextVisible), Converters.BoolToVisibilityConverter))),
+                                        Binding(nameof(ViewModel.AdditionalTextVisible), Converters.BoolToVisibilityConverter)),
+                                TextBlock()
+                                    .Column(2)
+                                    .Foreground(Brushes.Green)
+                                    .VAlignCenter()
+                                    .HAlignCenter()
+                                    .Text("Some another additional text")
+                                    .Bind(
+                                        VisibilityProperty,
+                                        Binding(nameof(ViewModel.AdditionalTextVisible), Converters.InvertBoolToVisibilityConverter))),
                         TextBox()
                             .FocusStyleNone()
                             .Margin(24, 0, 24, 0)

@@ -125,3 +125,12 @@ Style DialogButtonStyle =
     }
 ```
 ---
+
+## Simple FP-style converter example
+```csharp
+    FunctionalConverter<bool, Visibility> InvertBoolToVisibilityConverter = 
+        new FunctionalConverter<bool, Visibility>(
+            convert: (value, culture) => value ? Visibility.Hidden : Visibility.Visible,
+            convertBack: (value, culture) => value != Visibility.Visible);
+```
+---
