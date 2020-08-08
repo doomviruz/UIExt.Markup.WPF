@@ -12,13 +12,17 @@ namespace UIExt.Markup.WPF.Sample
 {
     public class SampleDialogViewModel : INotifyPropertyChanged
     {
+        private bool _additionalTextVisible;
         public SampleDialogViewModel()
         {
+            ToggleTextVisibilityCommand = new ActionCommand(() => AdditionalTextVisible = !AdditionalTextVisible);
             ActionCommand = new ActionCommand(() => MessageBox.Show("Action invoked"));
             ExitCommand = new ActionCommand(() => App.Current.Shutdown());
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
+
+        public ActionCommand ToggleTextVisibilityCommand { get; }
 
         public ActionCommand ActionCommand { get; }
 
@@ -27,6 +31,17 @@ namespace UIExt.Markup.WPF.Sample
         public void OnPropertyChanged([CallerMemberName]string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public bool AdditionalTextVisible
+        {
+            get => _additionalTextVisible;
+
+            set
+            {
+                _additionalTextVisible = value;
+                OnPropertyChanged();
+            }
         }
     }
 }

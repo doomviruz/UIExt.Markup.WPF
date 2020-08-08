@@ -203,5 +203,11 @@ namespace System.Windows
             target.ForceCursor = value;
             return target;
         }
+
+        public static T Bind<T>(this T target, DependencyProperty property, Binding binding) where T : FrameworkElement
+        {
+            target.SetBinding(property, binding);
+            return target;
+        }
     }
 }

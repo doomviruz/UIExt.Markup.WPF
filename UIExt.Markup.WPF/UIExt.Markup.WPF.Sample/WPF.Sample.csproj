@@ -60,6 +60,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BoolToVisibilityConverter.cs" />
+    <Compile Include="Converters.cs" />
     <Compile Include="SampleDialog.cs" />
     <Compile Include="SampleDialogViewModel.cs" />
   </ItemGroup>

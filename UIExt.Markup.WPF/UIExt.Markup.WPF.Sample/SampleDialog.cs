@@ -10,6 +10,7 @@ using UIExt.Markup.WPF.Sample;
 using static System.Windows.Media.Brushes;
 using static UIExt.Markup.WPF.UIExt;
 using static UIExt.Markup.WPF.Setters;
+using System.Windows.Data;
 
 namespace WPF.Sample
 {
@@ -87,7 +88,7 @@ namespace WPF.Sample
         public void Build() =>
             this.Content(
                 Grid()
-                    .RowDefs(RowDef.Height(72), RowDef.Height(385), RowDef.Height(80))
+                    .RowDefs(RowDef.Height(72), RowDef.Height(30), RowDef.Height(385), RowDef.Height(80))
                     .Childs(
                         TextBlock()
                             .Foreground(SolidBrush("#ff000000"))
@@ -97,13 +98,30 @@ namespace WPF.Sample
                             .LineHeight(24)
                             .Row(0)
                             .Margin(24),
+                        Grid()
+                            .ColDefs(ColDef, ColDef)
+                            .Row(1)
+                            .Childs(
+                                ToggleButton()
+                                    .Content("Toggle text visibility")
+                                    .Command(ViewModel.ToggleTextVisibilityCommand)
+                                    .Column(0),
+                                TextBlock()
+                                    .Column(1)
+                                    .Foreground(Brushes.Red)
+                                    .VAlignCenter()
+                                    .HAlignCenter()
+                                    .Text("Some additional text")
+                                    .Bind(
+                                        VisibilityProperty, 
+                                        Binding(nameof(ViewModel.AdditionalTextVisible), Converters.BoolToVisibilityConverter))),
                         TextBox()
                             .FocusStyleNone()
                             .Margin(24, 0, 24, 0)
                             .Border(1)
                             .BorderBrush(Black)
                             .Wrap()
-                            .Row(1)
+                            .Row(2)
                             .Font("SegoeUI")
                             .FontSize(14)
                             .ReadOnly()
@@ -111,7 +129,7 @@ namespace WPF.Sample
                             .VScrollAuto()
                             .HScrollAuto(),
                         Grid()
-                            .Row(2)
+                            .Row(3)
                             .ColDefs(ColDef, ColDef)
                             .Childs(
                                 Button()

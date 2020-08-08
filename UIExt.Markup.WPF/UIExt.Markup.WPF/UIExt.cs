@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
+using System.Windows.Data;
 using System.Windows.Media;
 using UIExt.Markup.WPF;
 
@@ -106,5 +107,9 @@ namespace UIExt.Markup.WPF
 
         public static Trigger Trigger(DependencyProperty property, object value, DependencyProperty setterProperty, object setterValue) =>
             Trigger(property, value, Setter(setterProperty, setterValue));
+
+        public static Binding Binding(string path) => new Binding(path);
+
+        public static Binding Binding(string path, IValueConverter converter) => new Binding(path) { Converter = converter };
     }
 }
