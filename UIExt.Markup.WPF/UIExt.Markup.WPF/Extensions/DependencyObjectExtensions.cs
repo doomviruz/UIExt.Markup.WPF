@@ -51,5 +51,11 @@ namespace System.Windows
             Controls.ScrollViewer.SetVerticalScrollBarVisibility(target, value);
             return target;
         }
+
+        public static T OverflowMode<T>(this T target, OverflowMode value) where T : DependencyObject
+        {
+            Controls.ToolBar.SetOverflowMode(target, value);
+            return target;
+        }
     }
 }

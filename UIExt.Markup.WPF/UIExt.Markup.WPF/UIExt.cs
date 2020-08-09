@@ -71,6 +71,10 @@ namespace UIExt.Markup.WPF
 
         public static ContextMenu ContextMenu() => new ContextMenu();
 
+        public static Menu Menu() => new Menu();
+
+        public static ToolBar ToolBar() => new ToolBar();
+
         public static RowDefinition RowDef => new RowDefinition();
 
         public static ColumnDefinition ColDef => new ColumnDefinition();

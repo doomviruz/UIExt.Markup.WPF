@@ -56,6 +56,10 @@
     <Compile Include="Extensions\Buttons\ButtonExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\DatePickerExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\CalendarExtensions.cs" />
+    <Compile Include="Extensions\Menus\ToolBarExtensions.cs" />
+    <Compile Include="Extensions\Menus\MenuExtensions.cs" />
+    <Compile Include="Extensions\Menus\MenuBaseExtensions.cs" />
+    <Compile Include="Extensions\Menus\ContextMenuExtensions.cs" />
     <Compile Include="Extensions\Selection\ComboBoxExtensions.cs" />
     <Compile Include="Extensions\ContentControlExtensions.cs" />
     <Compile Include="Extensions\ControlExtensions.cs" />
@@ -97,7 +101,6 @@
     <Folder Include="Extensions\Documents\" />
     <Folder Include="Extensions\Ink\" />
     <Folder Include="Extensions\Media\" />
-    <Folder Include="Extensions\Menus\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
