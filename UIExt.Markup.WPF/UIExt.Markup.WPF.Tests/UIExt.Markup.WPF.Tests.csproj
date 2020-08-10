@@ -68,6 +68,10 @@
     <Compile Include="TestDatePickerExtensions.cs" />
     <Compile Include="TestDependencyObjectExtensions.cs" />
     <Compile Include="TestCalendarExtensions.cs" />
+    <Compile Include="TestContectMenuExtensions.cs" />
+    <Compile Include="TestMenuBaseExtensions.cs" />
+    <Compile Include="TestMenuExtensions.cs" />
+    <Compile Include="TestToolBarExtensions.cs" />
     <Compile Include="TestRepeatButtonExtensions.cs" />
     <Compile Include="TestViewboxExtensions.cs" />
     <Compile Include="TestUIExt.cs" />

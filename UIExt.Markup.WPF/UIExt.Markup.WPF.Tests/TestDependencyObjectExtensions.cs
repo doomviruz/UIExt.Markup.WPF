@@ -79,5 +79,14 @@ namespace UIExt.Markup.WPF.Tests
             System.Windows.Controls.ScrollViewer.GetPanningRatio(cb).Should().Be(42);
         }
 
+        [TestMethod]
+        public void TestOverflowMode()
+        {
+            var cb = CheckBox();
+
+            cb.OverflowMode(OverflowMode.Never);
+
+            System.Windows.Controls.ToolBar.GetOverflowMode(cb).Should().Be(OverflowMode.Never);
+        }
     }
 }

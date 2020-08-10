@@ -18,7 +18,7 @@ namespace System.Windows
             return source;
         }
 
-        public static T CustomPopupPlacementCallback<T>(this T source, CustomPopupPlacementCallback value) where T : ContextMenu
+        public static T PlacementCallback<T>(this T source, CustomPopupPlacementCallback value) where T : ContextMenu
         {
             source.CustomPopupPlacementCallback = value;
             return source;
