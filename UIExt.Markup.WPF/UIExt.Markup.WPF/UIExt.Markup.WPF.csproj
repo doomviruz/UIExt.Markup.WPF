@@ -56,6 +56,7 @@
     <Compile Include="Extensions\Buttons\ButtonExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\DatePickerExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\CalendarExtensions.cs" />
+    <Compile Include="Extensions\ItemsControlExtensions.cs" />
     <Compile Include="Extensions\Menus\ToolBarExtensions.cs" />
     <Compile Include="Extensions\Menus\MenuExtensions.cs" />
     <Compile Include="Extensions\Menus\MenuBaseExtensions.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Extensions\Navigation\PageExtensions.cs" />
     <Compile Include="Extensions\Layout\PanelExtensions.cs" />
     <Compile Include="Extensions\Selection\RadioButtonExtensions.cs" />
+    <Compile Include="Extensions\Selection\ListBoxExtensions.cs" />
     <Compile Include="Extensions\Selection\SliderExtensions.cs" />
     <Compile Include="Extensions\Selection\SelectorExtensions.cs" />
     <Compile Include="Extensions\Layout\DockPanelExtensions.cs" />
