@@ -57,6 +57,8 @@ namespace UIExt.Markup.WPF
 
         public static ComboBox ComboBox() => new ComboBox();
 
+        public static Slider Slider() => new Slider();
+
         public static TextBlock TextBlock() => new TextBlock();
 
         public static TextBox TextBox() => new TextBox();

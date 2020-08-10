@@ -77,6 +77,7 @@
     <Compile Include="Extensions\Navigation\PageExtensions.cs" />
     <Compile Include="Extensions\Layout\PanelExtensions.cs" />
     <Compile Include="Extensions\Selection\RadioButtonExtensions.cs" />
+    <Compile Include="Extensions\Selection\SliderExtensions.cs" />
     <Compile Include="Extensions\Selection\SelectorExtensions.cs" />
     <Compile Include="Extensions\Layout\DockPanelExtensions.cs" />
     <Compile Include="Extensions\Layout\WrapPanelExtensions.cs" />
