@@ -59,6 +59,8 @@ namespace UIExt.Markup.WPF
 
         public static Slider Slider() => new Slider();
 
+        public static ListBox ListBox() => new ListBox();
+
         public static TextBlock TextBlock() => new TextBlock();
 
         public static TextBox TextBox() => new TextBox();
