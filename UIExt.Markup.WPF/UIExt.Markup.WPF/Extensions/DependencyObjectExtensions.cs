@@ -57,5 +57,35 @@ namespace System.Windows
             Controls.ToolBar.SetOverflowMode(target, value);
             return target;
         }
+
+        public static T SetIsSelected<T>(this T target, bool value) where T : DependencyObject
+        {
+            Controls.Primitives.Selector.SetIsSelected(target, value);
+            return target;
+        }
+
+        public static T AddSelectedHandler<T>(this T target, RoutedEventHandler value) where T : DependencyObject
+        {
+            Controls.Primitives.Selector.AddSelectedHandler(target, value);
+            return target;
+        }
+
+        public static T AddUnselectedHandler<T>(this T target, RoutedEventHandler value) where T : DependencyObject
+        {
+            Controls.Primitives.Selector.AddUnselectedHandler(target, value);
+            return target;
+        }
+
+        public static T RemoveSelectedHandler<T>(this T target, RoutedEventHandler value) where T : DependencyObject
+        {
+            Controls.Primitives.Selector.RemoveSelectedHandler(target, value);
+            return target;
+        }
+
+        public static T RemoveUnselectedHandler<T>(this T target, RoutedEventHandler value) where T : DependencyObject
+        {
+            Controls.Primitives.Selector.RemoveUnselectedHandler(target, value);
+            return target;
+        }
     }
 }
