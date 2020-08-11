@@ -17,6 +17,8 @@ namespace UIExt.Markup.WPF
 
         public static Page Page() => new Page();
 
+        public static Frame Frame() => new Frame();
+
         public static Grid Grid() => new Grid();
 
         public static GridSplitter GridSplitter() => new GridSplitter();
