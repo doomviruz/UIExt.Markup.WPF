@@ -65,49 +65,49 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TestConverters.cs" />
-    <Compile Include="TestDatePickerExtensions.cs" />
+    <Compile Include="DataDisplay\TestDatePickerExtensions.cs" />
     <Compile Include="TestDependencyObjectExtensions.cs" />
-    <Compile Include="TestCalendarExtensions.cs" />
-    <Compile Include="TestContectMenuExtensions.cs" />
+    <Compile Include="DataDisplay\TestCalendarExtensions.cs" />
+    <Compile Include="Menus\TestContextMenuExtensions.cs" />
     <Compile Include="TestItemsControlsExtensions.cs" />
-    <Compile Include="TestSliderExtensions.cs" />
-    <Compile Include="TestLisBoxExtensions.cs" />
-    <Compile Include="TestMenuBaseExtensions.cs" />
-    <Compile Include="TestMenuExtensions.cs" />
-    <Compile Include="TestToolBarExtensions.cs" />
-    <Compile Include="TestRepeatButtonExtensions.cs" />
-    <Compile Include="TestViewboxExtensions.cs" />
+    <Compile Include="Selection\TestSliderExtensions.cs" />
+    <Compile Include="Selection\TestLisBoxExtensions.cs" />
+    <Compile Include="Menus\TestMenuBaseExtensions.cs" />
+    <Compile Include="Menus\TestMenuExtensions.cs" />
+    <Compile Include="Menus\TestToolBarExtensions.cs" />
+    <Compile Include="Buttons\TestRepeatButtonExtensions.cs" />
+    <Compile Include="Layout\TestViewboxExtensions.cs" />
     <Compile Include="TestUIExt.cs" />
-    <Compile Include="TestScrollbarExtensions.cs" />
-    <Compile Include="TestScrollViewerExtensions.cs" />
-    <Compile Include="TestRangeBaseExtensions.cs" />
-    <Compile Include="TestHeaderedContentControlExtensions.cs" />
-    <Compile Include="TestGridSplitterExtensions.cs" />
-    <Compile Include="TestExpanderExtensions.cs" />
-    <Compile Include="TestButtonExtensions.cs" />
+    <Compile Include="Layout\TestScrollbarExtensions.cs" />
+    <Compile Include="Layout\TestScrollViewerExtensions.cs" />
+    <Compile Include="Layout\TestRangeBaseExtensions.cs" />
+    <Compile Include="Layout\TestHeaderedContentControlExtensions.cs" />
+    <Compile Include="Layout\TestGridSplitterExtensions.cs" />
+    <Compile Include="Layout\TestExpanderExtensions.cs" />
+    <Compile Include="Buttons\TestButtonExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestBulletDecoratorExtensions.cs" />
-    <Compile Include="TestDockPanelExtensions.cs" />
-    <Compile Include="TestComboBoxExtensions.cs" />
+    <Compile Include="Layout\TestBulletDecoratorExtensions.cs" />
+    <Compile Include="Layout\TestDockPanelExtensions.cs" />
+    <Compile Include="Selection\TestComboBoxExtensions.cs" />
     <Compile Include="TestContentControlExtensions.cs" />
     <Compile Include="TestControlExtensions.cs" />
     <Compile Include="TestFrameworkElementExtensions.cs" />
-    <Compile Include="TestGridExtensions.cs" />
-    <Compile Include="TestPageExtensions.cs" />
-    <Compile Include="TestPanelExtensions.cs" />
-    <Compile Include="TestRadioButtonExtensions.cs" />
-    <Compile Include="TestSelectorExtensions.cs" />
+    <Compile Include="Layout\TestGridExtensions.cs" />
+    <Compile Include="Navigation\TestPageExtensions.cs" />
+    <Compile Include="Layout\TestPanelExtensions.cs" />
+    <Compile Include="Selection\TestRadioButtonExtensions.cs" />
+    <Compile Include="Selection\TestSelectorExtensions.cs" />
     <Compile Include="TestSetters.cs" />
-    <Compile Include="TestWrapPanelExtensions.cs" />
-    <Compile Include="TestVirtualizingStackPanelExtensions.cs" />
-    <Compile Include="TestStackPanelExtensions.cs" />
+    <Compile Include="Layout\TestWrapPanelExtensions.cs" />
+    <Compile Include="Layout\TestVirtualizingStackPanelExtensions.cs" />
+    <Compile Include="Layout\TestStackPanelExtensions.cs" />
     <Compile Include="TestStyleExtensions.cs" />
-    <Compile Include="TestTextBlockExtensions.cs" />
-    <Compile Include="TestTextBoxExtensions.cs" />
-    <Compile Include="TestToggleButtonExtensions.cs" />
+    <Compile Include="UserInformation\TestTextBlockExtensions.cs" />
+    <Compile Include="Input\TestTextBoxExtensions.cs" />
+    <Compile Include="Selection\TestToggleButtonExtensions.cs" />
     <Compile Include="TestTriggerDefs.cs" />
     <Compile Include="TestUIElementExtensions.cs" />
-    <Compile Include="TestWindowExtensions.cs" />
+    <Compile Include="Layout\TestWindowExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -118,6 +118,7 @@
       <Name>UIExt.Markup.WPF</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

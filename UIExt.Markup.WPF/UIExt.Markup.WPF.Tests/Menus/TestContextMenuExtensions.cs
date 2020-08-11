@@ -7,7 +7,7 @@ using static UIExt.Markup.WPF.UIExt;
 namespace UIExt.Markup.WPF.Tests
 {
     [TestClass]
-    public class TestContectMenuExtensions
+    public class TestContextMenuExtensions
     {
         [TestMethod]
         public void TestHorizontalOffset()
