@@ -69,6 +69,9 @@
     <Compile Include="TestDependencyObjectExtensions.cs" />
     <Compile Include="TestCalendarExtensions.cs" />
     <Compile Include="TestContectMenuExtensions.cs" />
+    <Compile Include="TestItemsControlsExtensions.cs" />
+    <Compile Include="TestSliderExtensions.cs" />
+    <Compile Include="TestLisBoxExtensions.cs" />
     <Compile Include="TestMenuBaseExtensions.cs" />
     <Compile Include="TestMenuExtensions.cs" />
     <Compile Include="TestToolBarExtensions.cs" />

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -87,6 +88,98 @@ namespace UIExt.Markup.WPF.Tests
             cb.OverflowMode(OverflowMode.Never);
 
             System.Windows.Controls.ToolBar.GetOverflowMode(cb).Should().Be(OverflowMode.Never);
+        }
+
+        [TestMethod]
+        public void TestSetIsSelected()
+        {
+            var lb = ListBox();
+
+            lb.SetIsSelected(true);
+
+            System.Windows.Controls.Primitives.Selector.GetIsSelected(lb).Should().Be(true);
+        }
+
+        [TestMethod]
+        public void TestAddSelectedHandler()
+        {
+            var fired = false;
+            var item = new ListBoxItem();
+            RoutedEventHandler handler = (_, e) => 
+            {
+                fired = true;
+            };
+
+            item.AddSelectedHandler(handler);
+            item.SetIsSelected(true);
+
+            fired.Should().Be(true);
+        }
+
+        [TestMethod]
+        public void TestRemoveSelectedHandler()
+        {
+            var fired = false;
+            var item = new ListBoxItem();
+            RoutedEventHandler handler = (_, e) =>
+            {
+                fired = true;
+            };
+
+            item.AddSelectedHandler(handler);
+            item.SetIsSelected(true);
+
+            fired.Should().Be(true);
+
+            item.SetIsSelected(false);
+            fired = false;
+
+            item.RemoveSelectedHandler(handler);
+            item.SetIsSelected(true);
+
+            fired.Should().Be(false);
+        }
+
+        [TestMethod]
+        public void TestAddUnselectedHandler()
+        {
+            var fired = false;
+            var item = new ListBoxItem();
+            RoutedEventHandler handler = (_, e) =>
+            {
+                fired = true;
+            };
+
+            item.SetIsSelected(true);
+            item.AddUnselectedHandler(handler);
+            item.SetIsSelected(false);
+
+            fired.Should().Be(true);
+        }
+
+        [TestMethod]
+        public void TestRemoveUnSelectedHandler()
+        {
+            var fired = false;
+            var item = new ListBoxItem();
+            RoutedEventHandler handler = (_, e) =>
+            {
+                fired = true;
+            };
+
+            item.SetIsSelected(true);
+            item.AddUnselectedHandler(handler);
+            item.SetIsSelected(false);
+
+            fired.Should().Be(true);
+
+            item.SetIsSelected(true);
+            fired = false;
+
+            item.RemoveUnselectedHandler(handler);
+            item.SetIsSelected(false);
+
+            fired.Should().Be(false);
         }
     }
 }

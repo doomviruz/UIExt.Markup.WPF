@@ -18,7 +18,7 @@ namespace System.Windows
             return target;
         }
 
-        public static T GroupStyleSelector<T>(this T target, GroupStyleSelector value) where T : ItemsControl
+        public static T SetGroupStyleSelector<T>(this T target, GroupStyleSelector value) where T : ItemsControl
         {
             target.GroupStyleSelector = value;
             return target;
