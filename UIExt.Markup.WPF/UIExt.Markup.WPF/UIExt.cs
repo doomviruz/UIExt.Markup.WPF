@@ -2,6 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Data;
+using System.Windows.Documents;
 using System.Windows.Media;
 using UIExt.Markup.WPF;
 
@@ -18,6 +19,8 @@ namespace UIExt.Markup.WPF
         public static Page Page() => new Page();
 
         public static Frame Frame() => new Frame();
+
+        public static Hyperlink Hyperlink() => new Hyperlink();
 
         public static Grid Grid() => new Grid();
 

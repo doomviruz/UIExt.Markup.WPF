@@ -64,6 +64,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandStub.cs" />
+    <Compile Include="Navigation\TestHyperlinkExtensions.cs" />
     <Compile Include="Navigation\TestFrameExtensions.cs" />
     <Compile Include="TestConverters.cs" />
     <Compile Include="DataDisplay\TestDatePickerExtensions.cs" />

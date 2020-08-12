@@ -10,17 +10,6 @@ namespace UIExt.Markup.WPF.Tests
     [TestClass]
     public class TestButtonExtensions
     {
-        class CommandStub : ICommand
-        {
-            public event EventHandler CanExecuteChanged;
-
-            public bool CanExecute(object parameter) => true;
-
-            public void Execute(object parameter)
-            {
-            }
-        }
-
         [TestMethod]
         public void TestCommand()
         {
