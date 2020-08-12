@@ -4,6 +4,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Media;
+using System.Windows.Navigation;
 using UIExt.Markup.WPF;
 
 namespace UIExt.Markup.WPF
@@ -15,6 +16,8 @@ namespace UIExt.Markup.WPF
         public static SolidColorBrush SolidBrush(byte a, byte r, byte g, byte b) => new SolidColorBrush(Color.FromArgb(a, r, g, b));
 
         public static Window Window() => new Window();
+
+        public static NavigationWindow NavigationWindow() => new NavigationWindow();
 
         public static Page Page() => new Page();
 

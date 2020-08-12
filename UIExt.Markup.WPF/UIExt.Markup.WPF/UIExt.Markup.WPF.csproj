@@ -61,6 +61,7 @@
     <Compile Include="Extensions\Menus\MenuExtensions.cs" />
     <Compile Include="Extensions\Menus\MenuBaseExtensions.cs" />
     <Compile Include="Extensions\Menus\ContextMenuExtensions.cs" />
+    <Compile Include="Extensions\Navigation\NavigationWindowExtensions.cs" />
     <Compile Include="Extensions\Navigation\HyperlinkExtensions.cs" />
     <Compile Include="Extensions\Navigation\FrameExtensions.cs" />
     <Compile Include="Extensions\Selection\ComboBoxExtensions.cs" />
