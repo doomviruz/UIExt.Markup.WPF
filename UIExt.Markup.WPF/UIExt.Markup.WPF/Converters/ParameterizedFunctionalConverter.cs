@@ -20,8 +20,8 @@ namespace UIExt.Markup.WPF.Converters
             _convertBack = convertBack ?? throw new ArgumentNullException(nameof(convertBack));
         }
 
-        public override TTo Convert(TFrom value, TParam parameter, CultureInfo culture) => _convert.Invoke(value, parameter, culture);
+        public override TTo Convert(TFrom value, TParam parameter, CultureInfo culture) => _convert(value, parameter, culture);
 
-        public override TFrom ConvertBack(TTo value, TConvertBackParam parameter, CultureInfo culture) => _convertBack.Invoke(value, parameter, culture);
+        public override TFrom ConvertBack(TTo value, TConvertBackParam parameter, CultureInfo culture) => _convertBack(value, parameter, culture);
     }
 }

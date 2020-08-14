@@ -49,8 +49,12 @@
   <ItemGroup>
     <Compile Include="Converters\ConverterBase.cs" />
     <Compile Include="Converters\FunctionalConverter.cs" />
+    <Compile Include="Converters\FunctionalMultiValueConverter.cs" />
+    <Compile Include="Converters\MultiValueConverterBase.cs" />
     <Compile Include="Converters\ParameterizedConverterBase.cs" />
     <Compile Include="Converters\ParameterizedFunctionalConverter.cs" />
+    <Compile Include="Converters\ParameterizedFunctionalMultiValueConverter.cs" />
+    <Compile Include="Converters\ParameterizedMultiValueConverterBase.cs" />
     <Compile Include="Element.cs" />
     <Compile Include="Extensions\Buttons\RepeatButtonExtensions.cs" />
     <Compile Include="Extensions\Buttons\ButtonExtensions.cs" />
