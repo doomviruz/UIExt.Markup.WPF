@@ -58,6 +58,7 @@
     <Compile Include="Element.cs" />
     <Compile Include="Extensions\Buttons\RepeatButtonExtensions.cs" />
     <Compile Include="Extensions\Buttons\ButtonExtensions.cs" />
+    <Compile Include="Extensions\DataDisplay\DataGridColumnExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\DataGridExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\DatePickerExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\CalendarExtensions.cs" />
