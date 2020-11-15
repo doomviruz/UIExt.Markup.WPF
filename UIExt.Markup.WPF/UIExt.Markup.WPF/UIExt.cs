@@ -57,6 +57,8 @@ namespace UIExt.Markup.WPF
 
         public static DatePicker DatePicker() => new DatePicker();
 
+        public static DataGrid DataGrid() => new DataGrid();
+
         public static ToggleButton ToggleButton() => new ToggleButton();
 
         public static RadioButton RadioButton() => new RadioButton();
