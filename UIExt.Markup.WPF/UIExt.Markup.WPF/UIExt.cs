@@ -59,6 +59,8 @@ namespace UIExt.Markup.WPF
 
         public static DataGrid DataGrid() => new DataGrid();
 
+        public static DataGridTextColumn DataGridTextColumn() => new DataGridTextColumn();
+
         public static ToggleButton ToggleButton() => new ToggleButton();
 
         public static RadioButton RadioButton() => new RadioButton();
