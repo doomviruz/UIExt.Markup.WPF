@@ -58,6 +58,9 @@
     <Compile Include="Element.cs" />
     <Compile Include="Extensions\Buttons\RepeatButtonExtensions.cs" />
     <Compile Include="Extensions\Buttons\ButtonExtensions.cs" />
+    <Compile Include="Extensions\DataDisplay\DataGridHyperlinkColumnExtensions.cs" />
+    <Compile Include="Extensions\DataDisplay\DataGridBoumdColumnExtensions.cs" />
+    <Compile Include="Extensions\DataDisplay\DataGridCheckBoxColumnExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\DataGridTextColumnExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\DataGridColumnExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\DataGridExtensions.cs" />
