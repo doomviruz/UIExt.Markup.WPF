@@ -1,4 +1,4 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
@@ -280,6 +280,17 @@ namespace System.Windows
         public static T SelectionMode<T>(this T target, DataGridSelectionMode value) where T : DataGrid
         {
             target.SelectionMode = value;
+            return target;
+        }
+
+        public static T Columns<T>(this T target, IEnumerable<DataGridColumn> columns) where T : DataGrid
+        {
+            target.Columns.Clear();
+            foreach (var column in columns)
+            { 
+                target.Columns.Add(column); 
+            }
+
             return target;
         }
     }
