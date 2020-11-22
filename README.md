@@ -2,6 +2,12 @@
 Draft WPF extensions library to define UI from code instead of XAML usage.
 Inspired by VincentH-Net/CSharpForMarkup for Xamarin Forms.
 
+## Nu-get
+
+Nu-get package | Description
+---------------|-------------
+[UIExt.Markup.WPF](https://www.nuget.org/packages/UIExt.Markup.WPF) | Now 0.1.0 intial release published.
+
 ## Example
 ```csharp
 public void Build() =>

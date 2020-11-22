@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>UIExt.Markup.WPF</id>
+    <version>0.1.0</version>
+    <title>UIExt.Markup.WPF</title>
+    <authors>Anton Taranov</authors>
+    <owners>Anton Taranov</owners>
+    <licenseUrl>https://github.com/doomviruz/UIExt.Markup.WPF/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/doomviruz/UIExt.Markup.WPF</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description> WPF extensions library to define UI from code instead of XAML usage</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+  </metadata>
+</package>
