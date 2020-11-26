@@ -58,6 +58,7 @@
     <Compile Include="Element.cs" />
     <Compile Include="Extensions\Buttons\RepeatButtonExtensions.cs" />
     <Compile Include="Extensions\Buttons\ButtonExtensions.cs" />
+    <Compile Include="Extensions\DataDisplay\DataGridComboBoxColumnExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\TreeViewExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\ListViewExtensions.cs" />
     <Compile Include="Extensions\DataDisplay\DataGridHyperlinkColumnExtensions.cs" />
